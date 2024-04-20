@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Todo Management</title>
+  </head>
+  <body>
+    <h1>Manage Todos</h1>
+
+    <form id="create-todo-form">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required /><br />
+
+      <label for="user-id">User ID:</label>
+      <input type="text" id="user-id" name="user-id" required /><br />
+
+      <button type="submit">Add Todo</button>
+    </form>
+
+    <form id="delete-todo-form">
+      <label for="delete-id">Todo ID to Delete:</label>
+      <input type="text" id="delete-id" name="delete-id" required />
+      <button type="submit">Delete Todo</button>
+    </form>
+
+    <form id="get-todo-form">
+      <label for="get-id">Fetch Todo ID:</label>
+      <input type="text" id="get-id" name="get-id" required />
+      <button type="button" id="fetch">Fetch Todo</button>
+    </form>
+
+    <form id="update-todo-form">
+      <label for="update-id">Todo ID to Update:</label>
+      <input type="text" id="update-id" name="update-id" required />
+
+      <label for="update-status">New Status:</label>
+      <input type="text" id="update-status" name="update-status" required />
+      <button type="submit">Update Todo</button>
+    </form>
+
+    <ul id="todo-list"></ul>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
